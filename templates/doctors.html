@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quản lý Bác sĩ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+  <!-- Thanh điều hướng -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary mb-4">
+  <div class="container">
+    <a class="navbar-brand text-white" href="{{ url_for('dashboard') }}">
+      <i class="fas fa-heartbeat me-2"></i> Healthcare System
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Chuyển đổi điều hướng"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{{ url_for('dashboard') }}">Trang chủ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{{ url_for('patients') }}">Bệnh nhân</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white active fw-bold" aria-current="page" href="{{ url_for('doctors') }}">Bác sĩ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{{ url_for('appointments') }}">Lịch hẹn</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <span class="navbar-text text-white me-3">Xin chào, {{ username }}</span>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-light" href="{{ url_for('logout') }}">Đăng xuất</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="container">
+    <h2>Quản lý Bác sĩ</h2>
+    <button id="btnAddDoctor" class="btn btn-primary mb-3">Thêm bác sĩ</button>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped align-middle">
+        <thead class="table-light">
+          <tr>
+            <th style="width: 5%;">STT</th>
+            <th style="width: 20%;">Tên</th>
+            <th style="width: 20%;">Chuyên môn</th>
+            <th style="width: 15%;">SĐT</th>
+            <th style="width: 20%;">Email</th>
+            <th style="width: 20%;">Bệnh nhân phụ trách</th>
+            <th style="width: 15%;">Hành động</th>
+          </tr>
+        </thead>
+        <tbody id="doctorTableBody">
+          {% for d in doctors %}
+          <tr data-id="{{ d.id }}">
+            <td>{{ d.id }}</td>
+            <td class="doctor-name text-primary" style="cursor:pointer;">{{ d.name }}</td>
+            <td>{{ d.specialty }}</td>
+            <td>{{ d.phone }}</td>
+            <td>{{ d.email }}</td>
+            <td>{{ d.patients|join(", ") }}</td>
+            <td>
+              <button class="btn btn-sm btn-warning btnEdit me-1" title="Sửa bác sĩ">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="btn btn-sm btn-danger btnDelete" title="Xóa bác sĩ">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Modal Thêm/Sửa bác sĩ -->
+  <div class="modal fade" id="doctorModal" tabindex="-1" aria-labelledby="doctorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <form id="doctorForm" class="modal-content" novalidate>
+        <div class="modal-header">
+          <h5 class="modal-title" id="doctorModalLabel">Thêm bác sĩ</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+        </div>
+        <div class="modal-body">
+          <input type="hidden" id="doctorId" />
+          <div class="mb-3">
+            <label for="doctorName" class="form-label">Tên <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="doctorName" required />
+            <div class="invalid-feedback">Vui lòng nhập tên bác sĩ.</div>
+          </div>
+          <div class="mb-3">
+            <label for="doctorSpecialty" class="form-label">Chuyên môn <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="doctorSpecialty" required />
+            <div class="invalid-feedback">Vui lòng nhập chuyên môn.</div>
+          </div>
+          <div class="mb-3">
+            <label for="doctorPhone" class="form-label">SĐT</label>
+            <input type="tel" class="form-control" id="doctorPhone" />
+          </div>
+          <div class="mb-3">
+            <label for="doctorEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="doctorEmail" />
+          </div>
+          <div class="mb-3">
+            <label for="doctorPatients" class="form-label">Bệnh nhân phụ trách (phân cách dấu phẩy)</label>
+            <input type="text" class="form-control" id="doctorPatients" placeholder="VD: Bệnh nhân 1, Bệnh nhân 2" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Lưu</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <script src="{{ url_for('static', filename='js/doctors.js') }}"></script>
+</body>
+</html>

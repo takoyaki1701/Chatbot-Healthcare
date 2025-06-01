@@ -1,0 +1,83 @@
+[
+    {
+      "question": "Tôi nên làm gì khi có triệu chứng cảm lạnh nhẹ?",
+      "answer": "Nghỉ ngơi đầy đủ, uống nhiều nước, sử dụng thuốc giảm đau hạ sốt nếu cần, và giữ vệ sinh cá nhân tốt. Nếu triệu chứng kéo dài hoặc trở nặng, nên đi khám bác sĩ.",
+      "tags": ["cảm lạnh", "tư vấn", "self-care"]
+    },
+    {
+      "question": "Khi nào tôi nên đi khám bác sĩ khi có triệu chứng bệnh hô hấp?",
+      "answer": "Bạn nên đi khám khi triệu chứng nghiêm trọng hoặc kéo dài, như sốt cao liên tục, khó thở, đau ngực, lú lẫn, hoặc khi cảm thấy cơ thể không cải thiện sau vài ngày tự chăm sóc tại nhà.",
+      "tags": ["tư vấn", "khi nào đi khám", "cảnh báo", "bệnh hô hấp"]
+    },
+    {
+      "question": "Làm sao để phòng ngừa các bệnh đường hô hấp hiệu quả?",
+      "answer": "Thường xuyên rửa tay, tránh tiếp xúc với người bệnh, đeo khẩu trang nơi công cộng, duy trì lối sống lành mạnh, tiêm phòng vaccine đầy đủ và giữ vệ sinh môi trường sống.",
+      "tags": ["phòng ngừa", "bệnh đường hô hấp", "lifestyle"]
+    },
+    {
+      "question": "Tôi cần làm gì khi bị dị ứng?",
+      "answer": "Tránh tiếp xúc với các tác nhân dị ứng nếu biết rõ, sử dụng thuốc theo chỉ dẫn bác sĩ, giữ môi trường sống sạch sẽ và thông thoáng. Trong trường hợp dị ứng nặng, cần đến cơ sở y tế ngay lập tức.",
+      "tags": ["dị ứng", "tư vấn", "self-care"]
+    },
+    {
+      "question": "Làm sao để chăm sóc trẻ sơ sinh khi bị cảm lạnh?",
+      "answer": "Cho trẻ bú đủ sữa, giữ ẩm không khí phòng, rửa mũi cho trẻ bằng nước muối sinh lý, hút mũi bằng dụng cụ chuyên dụng. Không tự ý dùng thuốc cho trẻ dưới 6 tháng tuổi mà không có chỉ định bác sĩ.",
+      "tags": ["cảm lạnh", "trẻ sơ sinh", "chăm sóc"]
+    },
+    {
+      "question": "Tôi cần làm gì khi có triệu chứng COVID-19 nhẹ?",
+      "answer": "Cách ly tại nhà, nghỉ ngơi, uống đủ nước, theo dõi triệu chứng, sử dụng thuốc giảm triệu chứng theo hướng dẫn và liên hệ y tế khi có dấu hiệu nặng như khó thở hoặc sốt cao kéo dài.",
+      "tags": ["covid-19", "tư vấn", "self-care"]
+    },
+    {
+      "question": "Khi nào tôi nên đến bệnh viện trong trường hợp hen suyễn?",
+      "answer": "Nếu bạn gặp khó thở nghiêm trọng, không thể nói được câu đầy đủ, môi hoặc mặt tím tái, hoặc nếu thuốc cắt cơn không làm giảm triệu chứng, hãy đến cơ sở y tế ngay lập tức.",
+      "tags": ["hen suyễn", "cảnh báo", "cấp cứu"]
+    },
+    {
+      "question": "Làm sao tôi có thể giảm nguy cơ tái phát mụn nước lạnh?",
+      "answer": "Tránh tiếp xúc đột ngột với lạnh, giữ ấm cơ thể, sử dụng thuốc chống dị ứng theo hướng dẫn và mang theo thuốc khi ra ngoài trời lạnh nếu bạn có tiền sử dị ứng lạnh.",
+      "tags": ["mụn nước lạnh", "phòng ngừa", "self-care"]
+    },
+    {
+      "question": "Tôi nên làm gì khi có dấu hiệu phát ban da dị ứng?",
+      "answer": "Tránh tiếp xúc với chất gây dị ứng, giữ vùng da sạch sẽ và khô ráo, sử dụng kem dưỡng ẩm và thuốc theo chỉ dẫn. Nếu phát ban nặng, sưng hoặc kèm theo khó thở, hãy đến cơ sở y tế ngay.",
+      "tags": ["dị ứng", "phát ban", "tư vấn"]
+    },
+    {
+      "question": "Có những dấu hiệu nào cảnh báo cần đi khám cấp cứu ngay?",
+      "answer": "Các dấu hiệu như khó thở nặng, đau ngực dữ dội, co giật, lú lẫn, mặt hoặc môi tím tái, sốt rất cao kéo dài hoặc mất ý thức đều là những tình trạng cấp cứu cần đến bệnh viện ngay.",
+      "tags": ["cấp cứu", "cảnh báo", "tư vấn"]
+    },
+    {
+      "question": "Cách điều trị và chăm sóc tại nhà cho cảm lạnh là gì?",
+      "answer": "Uống nhiều nước, nghỉ ngơi hợp lý, sử dụng thuốc giảm đau hạ sốt như paracetamol hoặc ibuprofen, dùng nước muối sinh lý vệ sinh mũi. Tránh hút thuốc và tiếp xúc với môi trường ô nhiễm.",
+      "tags": ["cảm lạnh", "điều trị", "self-care"]
+    },
+    {
+      "question": "Làm thế nào để giảm triệu chứng cúm tại nhà?",
+      "answer": "Nghỉ ngơi, uống đủ nước, dùng thuốc giảm sốt và đau, tránh làm việc nặng, theo dõi triệu chứng và đi khám nếu có dấu hiệu nặng như khó thở hoặc sốt cao không hạ.",
+      "tags": ["cúm", "điều trị", "self-care"]
+    },
+    {
+      "question": "Tôi cần làm gì khi có triệu chứng viêm phế quản?",
+      "answer": "Uống đủ nước, nghỉ ngơi, dùng thuốc giảm ho nếu cần và đến khám bác sĩ nếu ho kéo dài hơn 3 tuần hoặc ho có máu, khó thở.",
+      "tags": ["viêm phế quản", "tư vấn", "self-care"]
+    },
+    {
+      "question": "Làm sao để phòng ngừa dị ứng thuốc?",
+      "answer": "Thông báo cho bác sĩ về tiền sử dị ứng thuốc, tránh tự ý dùng thuốc mới và theo dõi phản ứng bất thường khi dùng thuốc mới.",
+      "tags": ["dị ứng thuốc", "phòng ngừa", "tư vấn"]
+    },
+    {
+      "question": "Các bước xử lý khi bị hen suyễn tấn công là gì?",
+      "answer": "Sử dụng thuốc cắt cơn ngay lập tức, ngồi thẳng lưng, hít thở sâu và đều. Nếu không giảm sau vài phút, gọi cấp cứu hoặc đến cơ sở y tế gần nhất.",
+      "tags": ["hen suyễn", "cấp cứu", "xử lý"]
+    },
+    {
+      "question": "Tôi có thể làm gì để ngăn ngừa tái phát các bệnh dị ứng da?",
+      "answer": "Tránh tiếp xúc với các tác nhân gây dị ứng, giữ vệ sinh cá nhân và môi trường sống sạch sẽ, dùng thuốc theo chỉ dẫn của bác sĩ và thăm khám định kỳ.",
+      "tags": ["dị ứng da", "phòng ngừa", "tư vấn"]
+    }
+  ]
+  

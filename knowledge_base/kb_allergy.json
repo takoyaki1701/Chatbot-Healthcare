@@ -1,0 +1,43 @@
+[
+    {
+      "question": "Dị ứng là gì?",
+      "answer": "Dị ứng xảy ra khi hệ miễn dịch phản ứng với một chất lạ xâm nhập vào cơ thể, như phấn hoa, lông thú cưng, hoặc thực phẩm. Hệ miễn dịch tạo ra kháng thể để tấn công các chất này, gây ra các triệu chứng như ngứa, sưng, hoặc khó thở.",
+      "tags": ["dị ứng", "định nghĩa"]
+    },
+    {
+      "question": "Triệu chứng của dị ứng là gì?",
+      "answer": "Triệu chứng có thể bao gồm: ngứa, phát ban da, sưng, khó thở, hắt hơi, chảy nước mũi, mắt đỏ và ngứa, tiêu chảy, buồn nôn hoặc nôn.",
+      "tags": ["dị ứng", "triệu chứng"]
+    },
+    {
+      "question": "Dị ứng thuốc là gì?",
+      "answer": "Dị ứng thuốc là phản ứng của hệ miễn dịch đối với một loại thuốc, gây ra các triệu chứng như phát ban, ngứa, sưng, khó thở, hoặc sốc phản vệ.",
+      "tags": ["dị ứng thuốc", "định nghĩa"]
+    },
+    {
+      "question": "Triệu chứng của dị ứng thuốc là gì?",
+      "answer": "Triệu chứng có thể bao gồm: phát ban da, nổi mề đay, ngứa, sốt, sưng, khó thở, thở khò khè, chảy nước mũi, mắt đỏ và ngứa.",
+      "tags": ["dị ứng thuốc", "triệu chứng"]
+    },
+    {
+      "question": "Dị ứng ánh nắng là gì?",
+      "answer": "Dị ứng ánh nắng, hay còn gọi là viêm da ánh sáng đa hình thái, là phản ứng dị ứng của da khi tiếp xúc với ánh sáng mặt trời, gây ra phát ban, ngứa hoặc bỏng rát.",
+      "tags": ["dị ứng ánh nắng", "định nghĩa"]
+    },
+    {
+      "question": "Triệu chứng của dị ứng ánh nắng là gì?",
+      "answer": "Triệu chứng bao gồm: phát ban đỏ, ngứa, rát, nổi mụn nước hoặc phồng rộp trên da, thường xuất hiện sau khi tiếp xúc với ánh sáng mặt trời.",
+      "tags": ["dị ứng ánh nắng", "triệu chứng"]
+    },
+    {
+      "question": "Nguyên nhân gây dị ứng ánh nắng là gì?",
+      "answer": "Nguyên nhân có thể bao gồm: phản ứng của hệ miễn dịch với ánh sáng mặt trời, sử dụng một số loại thuốc hoặc hóa chất làm tăng độ nhạy cảm của da với ánh sáng mặt trời.",
+      "tags": ["dị ứng ánh nắng", "nguyên nhân"]
+    },
+    {
+      "question": "Cách phòng ngừa dị ứng ánh nắng như thế nào?",
+      "answer": "Để phòng ngừa, nên tránh tiếp xúc trực tiếp với ánh sáng mặt trời trong thời gian dài, sử dụng kem chống nắng có chỉ số SPF cao, mặc quần áo bảo vệ và đội mũ rộng vành.",
+      "tags": ["dị ứng ánh nắng", "phòng ngừa"]
+    }
+  ]
+  

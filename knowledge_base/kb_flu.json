@@ -1,0 +1,68 @@
+[
+    {
+      "question": "Cúm là gì?",
+      "answer": "Cúm (influenza) là bệnh nhiễm trùng đường hô hấp do virus gây ra, ảnh hưởng đến mũi, họng và phổi. Bệnh lây truyền qua giọt bắn khi người nhiễm ho, hắt hơi hoặc nói chuyện.",
+      "tags": ["cúm", "influenza", "định nghĩa"]
+    },
+    {
+      "question": "Triệu chứng của cúm là gì?",
+      "answer": "Triệu chứng bao gồm: sốt, ho, đau họng, nghẹt mũi, đau cơ, mệt mỏi, đau đầu, ớn lạnh, mất vị giác hoặc khứu giác.",
+      "tags": ["cúm", "triệu chứng"]
+    },
+    {
+      "question": "Cúm lây truyền như thế nào?",
+      "answer": "Virus cúm lây truyền qua giọt bắn khi người nhiễm ho, hắt hơi hoặc nói chuyện. Cũng có thể lây qua tiếp xúc với bề mặt nhiễm virus.",
+      "tags": ["cúm", "lây truyền"]
+    },
+    {
+      "question": "Khi nào nên đi khám bác sĩ khi bị cúm?",
+      "answer": "Nên đi khám nếu có triệu chứng nặng như khó thở, đau ngực, lú lẫn, môi hoặc mặt xanh tái, hoặc nếu có bệnh lý nền như tim mạch, tiểu đường.",
+      "tags": ["cúm", "khi nào đi khám"]
+    },
+    {
+      "question": "Cách điều trị cúm như thế nào?",
+      "answer": "Điều trị bao gồm nghỉ ngơi, uống nhiều nước, sử dụng thuốc giảm đau hạ sốt như paracetamol hoặc ibuprofen. Nếu có triệu chứng nặng, cần nhập viện để được chăm sóc y tế.",
+      "tags": ["cúm", "điều trị"]
+    },
+    {
+      "question": "Cúm H1N1 là gì?",
+      "answer": "Cúm H1N1, còn gọi là cúm lợn, là một chủng virus cúm A gây bệnh ở người. Nó bắt đầu gây bệnh vào mùa cúm 2009-2010 và đã trở thành một trong những chủng gây cúm mùa.",
+      "tags": ["cúm H1N1", "swine flu"]
+    },
+    {
+      "question": "Triệu chứng của cúm H1N1 là gì?",
+      "answer": "Triệu chứng bao gồm: sốt, ho, đau họng, nghẹt mũi, đau cơ, mệt mỏi, đau đầu, ớn lạnh, mất vị giác hoặc khứu giác.",
+      "tags": ["cúm H1N1", "swine flu", "triệu chứng"]
+    },
+    {
+      "question": "Cúm H1N1 lây truyền như thế nào?",
+      "answer": "Virus lây truyền qua giọt bắn khi người nhiễm ho, hắt hơi hoặc nói chuyện. Cũng có thể lây qua tiếp xúc với bề mặt nhiễm virus.",
+      "tags": ["cúm H1N1", "swine flu", "lây truyền"]
+    },
+    {
+      "question": "Cách điều trị cúm H1N1 như thế nào?",
+      "answer": "Điều trị bao gồm nghỉ ngơi, uống nhiều nước, sử dụng thuốc giảm đau hạ sốt như paracetamol hoặc ibuprofen. Nếu có triệu chứng nặng, cần nhập viện để được chăm sóc y tế.",
+      "tags": ["cúm H1N1", "swine flu", "điều trị"]
+    },
+    {
+      "question": "Hantavirus là gì?",
+      "answer": "Hantavirus là một nhóm virus gây bệnh, trong đó có hội chứng hô hấp hantavirus (HPS), gây ra các triệu chứng giống cúm và có thể tiến triển nhanh chóng thành bệnh nặng.",
+      "tags": ["Hantavirus", "hội chứng hô hấp hantavirus"]
+    },
+    {
+      "question": "Triệu chứng của hội chứng hô hấp hantavirus là gì?",
+      "answer": "Triệu chứng bao gồm: sốt, đau cơ, nhức đầu, mệt mỏi, buồn nôn, đau bụng, nôn mửa, tiêu chảy.",
+      "tags": ["Hantavirus", "hội chứng hô hấp hantavirus", "triệu chứng"]
+    },
+    {
+      "question": "Hantavirus lây truyền như thế nào?",
+      "answer": "Virus lây truyền qua tiếp xúc với chuột nhiễm virus, thường qua hít phải phân, nước tiểu hoặc nước bọt của chuột.",
+      "tags": ["Hantavirus", "lây truyền"]
+    },
+    {
+      "question": "Cách phòng ngừa nhiễm Hantavirus như thế nào?",
+      "answer": "Để phòng ngừa, nên tránh tiếp xúc với chuột, giữ vệ sinh môi trường sống, và sử dụng khẩu trang khi dọn dẹp khu vực có thể có phân hoặc nước tiểu của chuột.",
+      "tags": ["Hantavirus", "phòng ngừa"]
+    }
+  ]
+  

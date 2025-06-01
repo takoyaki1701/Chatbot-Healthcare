@@ -1,0 +1,118 @@
+[
+    {
+      "disease": "Cảm lạnh",
+      "warnings": [
+        "Sốt cao trên 38.5°C kéo dài hơn 3 ngày.",
+        "Khó thở hoặc thở khò khè.",
+        "Ho ra máu hoặc đờm có mủ.",
+        "Đau đầu dữ dội, đau xoang nặng.",
+        "Mệt mỏi kéo dài không cải thiện sau 1 tuần.",
+        "Đau ngực hoặc khó chịu khi thở sâu."
+      ],
+      "advice": "Nếu có các dấu hiệu trên, bạn nên đến ngay cơ sở y tế để được thăm khám và điều trị kịp thời."
+    },
+    {
+      "disease": "Cúm",
+      "warnings": [
+        "Sốt cao liên tục trên 39°C không giảm.",
+        "Khó thở hoặc đau ngực.",
+        "Mệt mỏi nghiêm trọng, lú lẫn.",
+        "Ho ra máu hoặc có đờm màu vàng/xanh.",
+        "Sưng họng nghiêm trọng, khó nuốt.",
+        "Tái phát sốt sau khi đã giảm."
+      ],
+      "advice": "Khi xuất hiện các dấu hiệu này, hãy liên hệ bác sĩ hoặc đến cơ sở y tế ngay."
+    },
+    {
+      "disease": "COVID-19",
+      "warnings": [
+        "Khó thở nặng, thở nhanh hoặc thở gấp.",
+        "Đau ngực hoặc áp lực vùng ngực.",
+        "Lú lẫn, mất khả năng tỉnh táo.",
+        "Môi hoặc mặt tím tái.",
+        "Sốt kéo dài không hạ.",
+        "Mệt mỏi, suy nhược nặng."
+      ],
+      "advice": "Nếu gặp các triệu chứng này, hãy gọi cấp cứu hoặc đến bệnh viện gần nhất ngay lập tức."
+    },
+    {
+      "disease": "Hen suyễn",
+      "warnings": [
+        "Khó thở nặng, không cải thiện khi dùng thuốc cắt cơn.",
+        "Không thể nói hoặc thở bằng vài từ ngắn.",
+        "Môi hoặc mặt tím tái.",
+        "Ho hoặc thở khò khè kéo dài.",
+        "Sử dụng thuốc cắt cơn thường xuyên hơn bình thường.",
+        "Mệt mỏi hoặc lú lẫn trong cơn hen."
+      ],
+      "advice": "Đây là tình trạng cấp cứu, cần đến ngay bệnh viện hoặc gọi cấp cứu."
+    },
+    {
+      "disease": "Dị ứng nặng",
+      "warnings": [
+        "Sưng mặt, môi, lưỡi hoặc cổ họng.",
+        "Khó thở hoặc thở khò khè.",
+        "Phát ban lan rộng, mẩn đỏ nghiêm trọng.",
+        "Chóng mặt, ngất xỉu.",
+        "Buồn nôn hoặc nôn mửa dữ dội.",
+        "Đau bụng dữ dội hoặc tiêu chảy nghiêm trọng."
+      ],
+      "advice": "Cần cấp cứu y tế khẩn cấp ngay lập tức."
+    },
+    {
+      "disease": "Mụn nước lạnh (Cold urticaria)",
+      "warnings": [
+        "Phản ứng dị ứng lan rộng nhanh chóng.",
+        "Khó thở hoặc sưng tấy ở cổ họng.",
+        "Choáng váng, tụt huyết áp.",
+        "Phát ban da rộng và ngứa dữ dội.",
+        "Suy nhược cơ thể nhanh."
+      ],
+      "advice": "Gọi cấp cứu ngay lập tức khi xuất hiện các triệu chứng này."
+    },
+    {
+      "disease": "Viêm phế quản",
+      "warnings": [
+        "Ho kéo dài hơn 3 tuần.",
+        "Ho ra máu hoặc đờm có mủ.",
+        "Khó thở nghiêm trọng hoặc đau ngực.",
+        "Sốt cao kéo dài.",
+        "Đau nhức toàn thân, mệt mỏi kéo dài.",
+        "Tiếng thở khò khè hoặc có tiếng rít khi thở."
+      ],
+      "advice": "Cần khám chuyên khoa để được chẩn đoán và điều trị kịp thời."
+    },
+    {
+      "disease": "Viêm da tiếp xúc dị ứng",
+      "warnings": [
+        "Phát ban lan rộng, sưng tấy hoặc nổi mụn nước nhiều.",
+        "Sốt hoặc mệt mỏi kèm theo phát ban.",
+        "Triệu chứng không giảm hoặc nặng hơn sau điều trị tại nhà.",
+        "Ngứa dữ dội, đau rát tại vùng da tổn thương.",
+        "Chảy dịch hoặc nhiễm trùng tại vùng da bị viêm."
+      ],
+      "advice": "Nên đi khám bác sĩ để được tư vấn và điều trị đúng cách."
+    },
+    {
+      "disease": "Tiêu chảy cấp",
+      "warnings": [
+        "Tiêu chảy kéo dài hơn 2 ngày không giảm.",
+        "Phân có máu hoặc chất nhầy.",
+        "Sốt cao trên 38.5°C.",
+        "Mất nước nghiêm trọng (khô miệng, chóng mặt, tiểu ít).",
+        "Đau bụng dữ dội hoặc nôn ói kéo dài."
+      ],
+      "advice": "Nên đến khám bác sĩ để được đánh giá và điều trị kịp thời."
+    },
+    {
+      "disease": "Đau đầu nghiêm trọng",
+      "warnings": [
+        "Đau đầu dữ dội đột ngột chưa từng có trước đây.",
+        "Kèm theo sốt cao, cứng cổ hoặc buồn nôn.",
+        "Mất ý thức hoặc co giật.",
+        "Yếu liệt một bên cơ thể hoặc thay đổi thị lực."
+      ],
+      "advice": "Cần được khám và xử lý y tế ngay lập tức."
+    }
+  ]
+  

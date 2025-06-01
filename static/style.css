@@ -1,0 +1,372 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  padding-bottom: 60px; /* phòng footer */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.navbar .nav-link.active {
+  color: #ffc107 !important;
+}
+
+/* Bảng danh sách bệnh nhân */
+.table {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.95rem;
+  border-collapse: separate;
+  border-spacing: 0 8px; /* tạo khoảng cách giữa các hàng */
+  background-color: transparent;
+}
+
+.table thead tr th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  vertical-align: middle;
+  text-align: center;
+  padding: 12px 10px;
+  border-top: none;
+  border-bottom: 2px solid #dee2e6;
+  color: #212529;
+}
+
+.table tbody tr {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
+  transition: background-color 0.15s ease-in-out;
+}
+
+.table tbody tr:hover {
+  background-color: #e9f2ff;
+}
+
+.table tbody tr td {
+  vertical-align: middle;
+  padding: 12px 10px;
+  color: #495057;
+  text-align: center;
+}
+
+/* Căn trái cho tên, địa chỉ, email */
+.table tbody tr td:nth-child(2),
+.table tbody tr td:nth-child(4),
+.table tbody tr td:nth-child(5) {
+  text-align: left;
+}
+
+/* Button hành động */
+.btn-warning,
+.btn-danger {
+  width: 38px;
+  height: 38px;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.btn-warning i,
+.btn-danger i {
+  font-size: 18px;
+  color: white;
+}
+
+/* Hover hiệu ứng cho button */
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Liên kết tên bệnh nhân */
+.patient-name {
+  cursor: pointer;
+  color: #0d6efd;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.patient-name:hover {
+  color: #084298;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+/* Chatbot */
+#chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#chat-popup {
+  display: none; /* mặc định ẩn */
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 360px;
+  max-height: 500px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+#chat-header {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  user-select: none;
+}
+
+#chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background: #f9f9f9;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#chat-input-area {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  gap: 8px;
+  align-items: center;
+}
+
+#mode-select {
+  flex: 0 0 140px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 6px 8px;
+  font-size: 14px;
+  background: white;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+#chat-input {
+  flex: 1 1 auto;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+#chat-send-btn {
+  flex: 0 0 60px;
+  padding: 8px 12px;
+  background: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.message {
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.user-msg {
+  text-align: right;
+  color: #007bff;
+}
+
+.bot-msg {
+  text-align: left;
+  color: #333;
+}
+
+#tts-control {
+  padding: 0 10px 10px 10px;
+  font-size: 13px;
+  color: #555;
+  user-select: none;
+}
+
+#tts-control input[type="checkbox"] {
+  margin-right: 6px;
+  cursor: pointer;
+}
+/* Button hành động bác sĩ */
+.btn-warning,
+.btn-danger {
+  width: 38px;
+  height: 38px;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.btn-warning i,
+.btn-danger i {
+  font-size: 18px;
+  color: white;
+}
+
+/* Hover hiệu ứng cho button */
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Liên kết tên bác sĩ */
+.doctor-name {
+  cursor: pointer;
+  color: #0d6efd;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.doctor-name:hover {
+  color: #084298;
+}
+#appointment-chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 100px; /* tránh chồng nút chatbot selftesting */
+  background: #28a745;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  z-index: 1050;
+}
+
+#appointment-chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 100px;
+  width: 360px;
+  max-height: 500px;
+  background: white;
+  border: 1px solid #28a745;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(40,167,69,.7);
+  z-index: 1051;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+#appointment-chat-header {
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  user-select: none;
+}
+
+#appointment-chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background: #f9f9f9;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#appointment-chat-input-area {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  gap: 8px;
+  align-items: center;
+}
+
+#appointment-chat-input {
+  flex: 1 1 auto;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+#appointment-chat-send-btn {
+  flex: 0 0 60px;
+  padding: 8px 12px;
+  background: #28a745;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.message {
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.user-msg {
+  text-align: right;
+  color: #28a745;
+}
+
+.bot-msg {
+  text-align: left;
+  color: #333;
+}

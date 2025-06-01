@@ -1,0 +1,38 @@
+[
+    {
+      "question": "Viêm phế quản là gì?",
+      "answer": "Viêm phế quản là tình trạng viêm niêm mạc các ống phế quản, gây ra ho, sản xuất đờm, mệt mỏi và khó thở.",
+      "tags": ["viêm phế quản", "bronchitis", "định nghĩa"]
+    },
+    {
+      "question": "Triệu chứng của viêm phế quản là gì?",
+      "answer": "Triệu chứng bao gồm ho, sản xuất đờm có thể trong, trắng, vàng nhạt hoặc xanh, đau họng, mệt mỏi, sốt nhẹ, ớn lạnh, khó thở và thở khò khè.",
+      "tags": ["viêm phế quản", "triệu chứng"]
+    },
+    {
+      "question": "Nguyên nhân gây viêm phế quản là gì?",
+      "answer": "Nguyên nhân thường gặp là nhiễm virus, bao gồm virus cảm lạnh thông thường, cúm, RSV và COVID-19. Viêm phế quản cấp tính có thể lây lan qua không khí khi người nhiễm ho hoặc hắt hơi.",
+      "tags": ["viêm phế quản", "nguyên nhân"]
+    },
+    {
+      "question": "Khi nào nên đi khám bác sĩ khi bị viêm phế quản?",
+      "answer": "Nên đi khám nếu ho kèm theo sốt trên 38°C, ho có đờm lẫn máu, khó thở nghiêm trọng, hoặc ho kéo dài hơn ba tuần.",
+      "tags": ["viêm phế quản", "khi nào đi khám"]
+    },
+    {
+      "question": "Cách điều trị viêm phế quản như thế nào?",
+      "answer": "Điều trị bao gồm nghỉ ngơi, uống nhiều nước, sử dụng thuốc giảm đau hạ sốt như paracetamol hoặc ibuprofen. Nếu có triệu chứng nặng, cần nhập viện để được chăm sóc y tế.",
+      "tags": ["viêm phế quản", "điều trị"]
+    },
+    {
+      "question": "Viêm phế quản có lây không?",
+      "answer": "Viêm phế quản cấp tính có thể lây lan từ người sang người, đặc biệt là khi gây ra bởi virus như cúm hoặc COVID-19.",
+      "tags": ["viêm phế quản", "lây truyền"]
+    },
+    {
+      "question": "Cách phòng ngừa viêm phế quản như thế nào?",
+      "answer": "Để phòng ngừa, nên rửa tay thường xuyên, tránh tiếp xúc với người bệnh, không hút thuốc và tránh khói thuốc.",
+      "tags": ["viêm phế quản", "phòng ngừa"]
+    }
+  ]
+  

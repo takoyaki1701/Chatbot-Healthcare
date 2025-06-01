@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chatbot Selftesting Popup</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div id="chat-button">💬</div>
+
+<div id="chat-popup">
+  <div id="chat-header">Trợ lý sức khỏe ảo</div>
+  <div id="chat-messages"></div>
+  <div id="chat-input-area">
+    <select id="mode-select" title="Chọn chế độ chatbot"></select>
+    <input id="chat-input" placeholder="Nhập câu hỏi hoặc triệu chứng..." autocomplete="off" />
+    <button id="chat-send-btn">Gửi</button>
+  </div>
+  <div id="tts-control">
+    <label><input type="checkbox" id="tts-toggle" checked> Bật giọng đọc</label>
+  </div>
+</div>
+
+<script>
+  const chatButton = document.getElementById("chat-button");
+  const chatPopup = document.getElementById("chat-popup");
+  const chatMessages = document.getElementById("chat-messages");
+  const chatInput = document.getElementById("chat-input");
+  const chatSendBtn = document.getElementById("chat-send-btn");
+  const modeSelect = document.getElementById("mode-select");
+  const ttsToggle = document.getElementById("tts-toggle");
+
+  // Thêm lựa chọn chế độ
+  function populateModeOptions() {
+    const options = [
+      {value: "lookup", text: "Tra cứu thông tin"},
+      {value: "diagnosis", text: "Chẩn đoán triệu chứng"}
+    ];
+    for(let opt of options){
+      let el = document.createElement("option");
+      el.value = opt.value;
+      el.textContent = opt.text;
+      modeSelect.appendChild(el);
+    }
+  }
+  populateModeOptions();
+
+  chatButton.onclick = () => {
+    if (chatPopup.style.display === "flex") chatPopup.style.display = "none";
+    else {
+      chatPopup.style.display = "flex";
+      if (!chatMessages.innerHTML) {
+        chatMessages.innerHTML += `<div class="bot-msg message">Chào bạn! Tôi là trợ lý sức khỏe ảo. Bạn có thể chọn chế độ và bắt đầu nhập.</div>`;
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+    }
+  };
+
+  async function sendMessage() {
+    let msg = chatInput.value.trim();
+    if (!msg) return;
+
+    const mode = modeSelect.value;
+
+    chatMessages.innerHTML += `<div class="user-msg message">${msg}</div>`;
+    chatInput.value = "";
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    try {
+      const res = await fetch("/chat", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({message: msg, mode: mode})
+      });
+      const data = await res.json();
+
+      chatMessages.innerHTML += `<div class="bot-msg message">${data.reply}</div>`;
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+
+      if (ttsToggle.checked && 'speechSynthesis' in window) {
+        let utterance = new SpeechSynthesisUtterance(data.reply);
+        utterance.lang = 'vi-VN';  // Giọng tiếng Việt
+        window.speechSynthesis.speak(utterance);
+      } else if (!('speechSynthesis' in window)) {
+        console.log("Trình duyệt không hỗ trợ Speech Synthesis.");
+      }
+
+      if(mode === "diagnosis"){
+        if(data.reply.toLowerCase().includes("kết quả") || data.reply.toLowerCase().includes("dự đoán bệnh")){
+          modeSelect.value = "lookup";
+          chatMessages.innerHTML += `<div class="bot-msg message"><i>Chẩn đoán hoàn thành. Bạn có thể chọn lại chế độ.</i></div>`;
+        }
+      }
+
+    } catch (err) {
+      chatMessages.innerHTML += `<div class="bot-msg message">Lỗi kết nối máy chủ.</div>`;
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+  }
+
+  chatSendBtn.onclick = sendMessage;
+  chatInput.addEventListener("keypress", e => {
+    if (e.key === "Enter") sendMessage();
+  });
+</script>
+
+</body>
+</html>

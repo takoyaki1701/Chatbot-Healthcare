@@ -1,0 +1,103 @@
+[
+    {
+      "question": "Triệu chứng của cảm lạnh thông thường là gì?",
+      "answer": "Triệu chứng cảm lạnh gồm: sổ mũi hoặc nghẹt mũi, đau hoặc rát họng, ho, hắt hơi, cảm thấy mệt mỏi, đau nhức nhẹ hoặc đau đầu nhẹ, sốt nhẹ.",
+      "tags": ["cảm lạnh", "triệu chứng"]
+    },
+    {
+      "question": "Nguyên nhân gây ra cảm lạnh là gì?",
+      "answer": "Cảm lạnh do virus gây ra, phổ biến nhất là rhinovirus. Ngoài ra còn có coronavirus, adenovirus, enterovirus, và virus parainfluenza.",
+      "tags": ["cảm lạnh", "nguyên nhân"]
+    },
+    {
+      "question": "Cảm lạnh lây truyền như thế nào?",
+      "answer": "Virus cảm lạnh lây qua giọt bắn khi người bệnh ho, hắt hơi, nói chuyện hoặc thở. Cũng có thể lây khi chạm vào bề mặt nhiễm virus rồi đưa tay lên miệng, mắt hoặc mũi.",
+      "tags": ["cảm lạnh", "lây truyền"]
+    },
+    {
+      "question": "Khi nào nên đi khám bác sĩ khi bị cảm lạnh?",
+      "answer": "Nên đi khám nếu triệu chứng trở nặng hoặc không cải thiện, sốt trên 38,5 độ C kéo dài hơn 3 ngày, khó thở, thở khò khè, đau họng dữ dội, đau đầu hoặc đau xoang nặng.",
+      "tags": ["cảm lạnh", "khi nào đi khám"]
+    },
+    {
+      "question": "Cách điều trị cảm lạnh như thế nào?",
+      "answer": "Không có thuốc chữa cảm lạnh. Điều trị chủ yếu giảm triệu chứng: nghỉ ngơi, uống nhiều nước, rửa mũi bằng nước muối sinh lý, dùng thuốc giảm đau hạ sốt như paracetamol hoặc ibuprofen. Không dùng thuốc xịt mũi quá 5 ngày.",
+      "tags": ["cảm lạnh", "điều trị"]
+    },
+    {
+      "question": "Triệu chứng của cảm lạnh ở trẻ sơ sinh là gì?",
+      "answer": "Triệu chứng cảm lạnh ở trẻ sơ sinh bao gồm: sổ mũi hoặc nghẹt mũi, chảy nước mũi có thể trong suốt, sau đó đặc và có màu vàng hoặc xanh; ho; sốt nhẹ; hắt hơi; quấy khóc; khó bú hoặc uống sữa; khó ngủ.",
+      "tags": ["cảm lạnh", "trẻ sơ sinh", "triệu chứng"]
+    },
+    {
+      "question": "Nguyên nhân gây cảm lạnh ở trẻ sơ sinh là gì?",
+      "answer": "Cảm lạnh ở trẻ sơ sinh do virus gây ra, phổ biến nhất là rhinovirus. Trẻ sơ sinh có thể bị nhiễm virus qua tiếp xúc với người bị cảm lạnh hoặc qua đồ vật nhiễm virus.",
+      "tags": ["cảm lạnh", "trẻ sơ sinh", "nguyên nhân"]
+    },
+    {
+      "question": "Khi nào nên đưa trẻ sơ sinh đi khám bác sĩ khi bị cảm lạnh?",
+      "answer": "Nên đưa trẻ đi khám bác sĩ nếu: trẻ dưới 3 tháng tuổi có dấu hiệu cảm lạnh; trẻ không bú đủ sữa hoặc không đi tiểu như thường lệ; có sốt trên 38°C; khó thở hoặc thở khò khè; ho kéo dài; chảy mũi đặc màu xanh trong nhiều ngày; hoặc có các triệu chứng khác như khóc dữ dội hoặc không tỉnh táo.",
+      "tags": ["cảm lạnh", "trẻ sơ sinh", "khi nào đi khám"]
+    },
+    {
+      "question": "Cách điều trị cảm lạnh cho trẻ sơ sinh như thế nào?",
+      "answer": "Điều trị cảm lạnh cho trẻ sơ sinh chủ yếu là giảm triệu chứng: cho trẻ bú đủ sữa, giữ ẩm không khí trong phòng, sử dụng nước muối sinh lý để rửa mũi cho trẻ, và hút mũi bằng dụng cụ hút mũi chuyên dụng. Không nên sử dụng thuốc cảm lạnh hoặc ho cho trẻ dưới 6 tháng tuổi mà không có chỉ định của bác sĩ.",
+      "tags": ["cảm lạnh", "trẻ sơ sinh", "điều trị"]
+    },
+    {
+      "question": "Làm sao để phòng ngừa cảm lạnh cho trẻ sơ sinh?",
+      "answer": "Để phòng ngừa cảm lạnh cho trẻ sơ sinh, cần: rửa tay thường xuyên, tránh cho trẻ tiếp xúc với người bị cảm lạnh, giữ cho môi trường sống của trẻ sạch sẽ, và đảm bảo trẻ bú sữa mẹ đầy đủ để tăng cường hệ miễn dịch.",
+      "tags": ["cảm lạnh", "trẻ sơ sinh", "phòng ngừa"]
+    },
+    {
+      "question": "Mụn nước lạnh là gì?",
+      "answer": "Mụn nước lạnh (cold urticaria) là phản ứng dị ứng của da khi tiếp xúc với lạnh, gây nổi mề đay đỏ, ngứa và sưng tấy. Phản ứng này xảy ra khi cơ thể giải phóng histamine sau khi tiếp xúc với lạnh.",
+      "tags": ["mụn nước lạnh", "cold urticaria", "dị ứng lạnh"]
+    },
+    {
+      "question": "Triệu chứng của mụn nước lạnh là gì?",
+      "answer": "Triệu chứng bao gồm: nổi mề đay đỏ, ngứa, sưng tấy tại vùng da tiếp xúc với lạnh, có thể kèm theo cảm giác bỏng rát. Phản ứng có thể xảy ra ngay sau khi tiếp xúc với lạnh.",
+      "tags": ["mụn nước lạnh", "triệu chứng"]
+    },
+    {
+      "question": "Nguyên nhân gây mụn nước lạnh là gì?",
+      "answer": "Nguyên nhân chính xác chưa được biết rõ, nhưng có thể do da nhạy cảm với lạnh, nhiễm virus, bệnh lý hoặc di truyền. Một số trường hợp có thể là do yếu tố di truyền hoặc bệnh lý nền như viêm gan hoặc ung thư.",
+      "tags": ["mụn nước lạnh", "nguyên nhân"]
+    },
+    {
+      "question": "Mụn nước lạnh có nguy hiểm không?",
+      "answer": "Trong hầu hết các trường hợp, mụn nước lạnh không nguy hiểm. Tuy nhiên, nếu phản ứng xảy ra ở vùng da rộng hoặc tiếp xúc với lạnh kéo dài, có thể gây sốc phản vệ, một tình trạng nguy hiểm cần cấp cứu kịp thời.",
+      "tags": ["mụn nước lạnh", "nguy hiểm"]
+    },
+    {
+      "question": "Cách phòng ngừa mụn nước lạnh như thế nào?",
+      "answer": "Để phòng ngừa, nên tránh tiếp xúc với lạnh đột ngột, bảo vệ da khi ra ngoài trời lạnh, tránh uống đồ uống lạnh hoặc ăn thực phẩm lạnh. Nếu có tiền sử dị ứng lạnh, nên mang theo thuốc chống dị ứng như loratadine hoặc cetirizine khi ra ngoài.",
+      "tags": ["mụn nước lạnh", "phòng ngừa"]
+    },
+    {
+      "question": "Mụn nước lạnh là gì?",
+      "answer": "Mụn nước lạnh (cold sore), còn gọi là mụn nước sốt, là một loại nhiễm virus phổ biến gây ra các vết mụn nước nhỏ, chứa đầy dịch, thường xuất hiện quanh môi. Các mụn nước này thường mọc thành cụm và có thể vỡ ra, tạo thành vảy trong quá trình lành bệnh. Thường thì mụn nước lạnh sẽ lành trong vòng 2 đến 3 tuần mà không để lại sẹo.",
+      "tags": ["mụn nước lạnh", "cold sore", "mụn nước sốt"]
+    },
+    {
+      "question": "Nguyên nhân gây mụn nước lạnh là gì?",
+      "answer": "Mụn nước lạnh chủ yếu do virus herpes simplex type 1 (HSV-1) gây ra. Virus này lây lan qua tiếp xúc trực tiếp như hôn, chia sẻ đồ dùng cá nhân như bàn chải đánh răng, ly uống nước hoặc qua quan hệ tình dục bằng miệng.",
+      "tags": ["mụn nước lạnh", "nguyên nhân", "HSV-1"]
+    },
+    {
+      "question": "Triệu chứng của mụn nước lạnh là gì?",
+      "answer": "Triệu chứng bao gồm: ngứa, rát hoặc châm chích quanh môi trước khi xuất hiện mụn nước; mụn nước nhỏ chứa đầy dịch quanh môi hoặc đôi khi ở mũi, má hoặc bên trong miệng; mụn nước có thể vỡ ra và tạo thành vảy. Trong trường hợp đầu tiên, có thể kèm theo sốt, đau họng, nhức đầu, đau cơ và sưng hạch bạch huyết.",
+      "tags": ["mụn nước lạnh", "triệu chứng"]
+    },
+    {
+      "question": "Mụn nước lạnh có thể lây lan không?",
+      "answer": "Có, mụn nước lạnh rất dễ lây lan, đặc biệt khi mụn nước đang vỡ ra. Virus có thể lây truyền qua tiếp xúc trực tiếp với vết thương hoặc qua đồ dùng cá nhân bị nhiễm virus.",
+      "tags": ["mụn nước lạnh", "lây lan"]
+    },
+    {
+      "question": "Cách điều trị mụn nước lạnh như thế nào?",
+      "answer": "Mặc dù không có cách chữa khỏi hoàn toàn, nhưng có thể sử dụng thuốc kháng virus theo chỉ định của bác sĩ để giảm thời gian lành bệnh và tần suất tái phát. Các loại thuốc như acyclovir, valacyclovir hoặc famciclovir có thể được sử dụng. Ngoài ra, việc sử dụng kem chống nắng môi và giảm căng thẳng cũng có thể giúp ngăn ngừa tái phát.",
+      "tags": ["mụn nước lạnh", "điều trị"]
+    }
+  ]
+  

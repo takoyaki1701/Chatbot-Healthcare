@@ -1,0 +1,53 @@
+[
+    {
+      "question": "COVID-19 là gì?",
+      "answer": "COVID-19 là bệnh do virus SARS-CoV-2 gây ra, ảnh hưởng đến đường hô hấp và có thể gây ra các triệu chứng từ nhẹ đến nặng.",
+      "tags": ["COVID-19", "định nghĩa"]
+    },
+    {
+      "question": "Triệu chứng của COVID-19 là gì?",
+      "answer": "Triệu chứng phổ biến bao gồm: sốt, ho, mệt mỏi, đau họng, mất vị giác hoặc khứu giác, khó thở, đau cơ, tiêu chảy, buồn nôn hoặc nôn, đau đầu, chóng mặt, đau mắt, phát ban da.",
+      "tags": ["COVID-19", "triệu chứng"]
+    },
+    {
+      "question": "COVID-19 lây truyền như thế nào?",
+      "answer": "Virus lây lan chủ yếu qua giọt bắn khi người nhiễm ho, hắt hơi hoặc nói chuyện. Cũng có thể lây qua tiếp xúc với bề mặt nhiễm virus.",
+      "tags": ["COVID-19", "lây truyền"]
+    },
+    {
+      "question": "Khi nào nên đi khám bác sĩ khi bị COVID-19?",
+      "answer": "Nên đi khám nếu có triệu chứng nặng như khó thở, đau ngực, lú lẫn, môi hoặc mặt xanh tái, hoặc nếu có bệnh lý nền như tim mạch, tiểu đường.",
+      "tags": ["COVID-19", "khi nào đi khám"]
+    },
+    {
+      "question": "Cách điều trị COVID-19 như thế nào?",
+      "answer": "Điều trị bao gồm nghỉ ngơi, uống nhiều nước, sử dụng thuốc giảm đau hạ sốt như paracetamol hoặc ibuprofen. Nếu có triệu chứng nặng, cần nhập viện để được chăm sóc y tế.",
+      "tags": ["COVID-19", "điều trị"]
+    },
+    {
+      "question": "MIS-C là gì?",
+      "answer": "MIS-C (Multisystem Inflammatory Syndrome in Children) là hội chứng viêm đa hệ ở trẻ em, liên quan đến nhiễm SARS-CoV-2, gây viêm ở nhiều cơ quan như tim, phổi, thận, não, da và mắt.",
+      "tags": ["MIS-C", "định nghĩa"]
+    },
+    {
+      "question": "Triệu chứng của MIS-C là gì?",
+      "answer": "Triệu chứng bao gồm: sốt kéo dài, viêm kết mạc (mắt đỏ), phát ban da, sưng tay hoặc chân, đau bụng, tiêu chảy, nôn, đau ngực, khó thở.",
+      "tags": ["MIS-C", "triệu chứng"]
+    },
+    {
+      "question": "MIS-C lây truyền như thế nào?",
+      "answer": "MIS-C không lây trực tiếp từ người sang người. Nó xảy ra sau khi nhiễm SARS-CoV-2, thường từ 2 đến 6 tuần sau khi nhiễm.",
+      "tags": ["MIS-C", "lây truyền"]
+    },
+    {
+      "question": "Khi nào nên đưa trẻ đi khám bác sĩ khi nghi ngờ MIS-C?",
+      "answer": "Nên đưa trẻ đi khám nếu có sốt kéo dài, phát ban da, đau bụng, tiêu chảy, sưng tay hoặc chân, hoặc các triệu chứng nghi ngờ khác.",
+      "tags": ["MIS-C", "khi nào đi khám"]
+    },
+    {
+      "question": "Cách điều trị MIS-C như thế nào?",
+      "answer": "Điều trị MIS-C thường bao gồm nhập viện, sử dụng thuốc chống viêm như immunoglobulin tĩnh mạch (IVIG), corticosteroid, và các biện pháp hỗ trợ khác tùy thuộc vào tình trạng cụ thể của trẻ.",
+      "tags": ["MIS-C", "điều trị"]
+    }
+  ]
+  

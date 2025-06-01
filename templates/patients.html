@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quản lý Bệnh nhân</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  
+  <style>
+    /* Chat popup fixed bottom right */
+    #chat-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #007bff;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+      text-align: center;
+      line-height: 60px;
+      cursor: pointer;
+      z-index: 1050;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      user-select: none;
+    }
+    #chat-popup {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      width: 360px;
+      height: 500px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.25);
+      z-index: 1060;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+    }
+    #chat-header {
+      background: #007bff;
+      color: white;
+      padding: 12px 15px;
+      font-weight: bold;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      user-select: none;
+    }
+    #chat-messages {
+      flex: 1;
+      padding: 10px;
+      overflow-y: auto;
+      background: #f9f9f9;
+      font-size: 14px;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    #chat-input-area {
+      display: flex;
+      padding: 10px;
+      border-top: 1px solid #ddd;
+      gap: 8px;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    #mode-select {
+      flex: 0 0 130px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 6px 8px;
+      font-size: 14px;
+      background: white;
+      cursor: pointer;
+    }
+    #chat-input {
+      flex: 1 1 auto;
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      min-width: 0;
+    }
+    #chat-send-btn {
+      flex: 0 0 60px;
+      padding: 8px 12px;
+      background: #007bff;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      white-space: nowrap;
+      box-sizing: border-box;
+      user-select: none;
+    }
+    #tts-control {
+      padding: 0 10px 10px 10px;
+      font-size: 13px;
+      color: #555;
+      user-select: none;
+      border-top: 1px solid #ddd;
+    }
+    #tts-control input[type="checkbox"] {
+      margin-right: 6px;
+      cursor: pointer;
+    }
+    .message {
+      margin-bottom: 10px;
+    }
+    .user-msg {
+      text-align: right;
+      color: #007bff;
+    }
+    .bot-msg {
+      text-align: left;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('dashboard') }}">
+        <i class="fas fa-heartbeat me-2"></i> Healthcare System
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link {% if request.endpoint == 'dashboard' %}active fw-bold{% endif %}" href="{{ url_for('dashboard') }}">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if request.endpoint == 'patients' %}active fw-bold{% endif %}" href="{{ url_for('patients') }}">Bệnh nhân</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if request.endpoint == 'doctors' %}active fw-bold{% endif %}" href="{{ url_for('doctors') }}">Bác sĩ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if request.endpoint == 'appointments' %}active fw-bold{% endif %}" href="{{ url_for('appointments') }}">Lịch hẹn</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item me-3 text-white">
+            Xin chào, <strong>{{ username }}</strong>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-light d-flex align-items-center" href="{{ url_for('logout') }}">
+              <i class="fas fa-sign-out-alt me-1"></i> Đăng xuất
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h2>Quản lý Bệnh nhân</h2>
+    <button id="btnAddPatient" class="btn btn-primary mb-3">Thêm bệnh nhân</button>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped align-middle">
+        <thead class="table-light">
+          <tr>
+            <th style="width: 5%;">ID</th>
+            <th style="width: 20%;">Tên</th>
+            <th style="width: 10%;">Giới tính</th>
+            <th style="width: 25%;">Địa chỉ</th>
+            <th style="width: 20%;">Email</th>
+            <th style="width: 15%;">Điện thoại</th>
+            <th style="width: 15%;">Hành động</th>
+          </tr>
+        </thead>
+        <tbody id="patientTableBody">
+          {% for p in patients %}
+          <tr data-id="{{ p.id }}">
+            <td>{{ p.id }}</td>
+            <td class="patient-name text-primary" style="cursor:pointer;">{{ p.name }}</td>
+            <td>{{ p.gender }}</td>
+            <td>{{ p.address }}</td>
+            <td>{{ p.email }}</td>
+            <td>{{ p.phone }}</td>
+            <td>
+              <button class="btn btn-sm btn-warning btnEdit me-1" title="Sửa bệnh nhân">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="btn btn-sm btn-danger btnDelete" title="Xóa bệnh nhân">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Modal Thêm/Sửa bệnh nhân -->
+  <div
+    class="modal fade"
+    id="patientModal"
+    tabindex="-1"
+    aria-labelledby="patientModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <form id="patientForm" class="modal-content" novalidate>
+        <div class="modal-header">
+          <h5 class="modal-title" id="patientModalLabel">Thêm bệnh nhân</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Đóng"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <input type="hidden" id="patientId" />
+          <div class="mb-3">
+            <label for="patientName" class="form-label"
+              >Tên <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="patientName"
+              required
+            />
+            <div class="invalid-feedback">Vui lòng nhập tên bệnh nhân.</div>
+          </div>
+          <div class="mb-3">
+            <label for="patientGender" class="form-label"
+              >Giới tính <span class="text-danger">*</span></label
+            >
+            <select class="form-select" id="patientGender" required>
+              <option value="" selected>Chọn giới tính</option>
+              <option value="Nam">Nam</option>
+              <option value="Nữ">Nữ</option>
+              <option value="Khác">Khác</option>
+            </select>
+            <div class="invalid-feedback">Vui lòng chọn giới tính.</div>
+          </div>
+          <div class="mb-3">
+            <label for="patientAddress" class="form-label"
+              >Địa chỉ <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="patientAddress"
+              required
+            />
+            <div class="invalid-feedback">Vui lòng nhập địa chỉ.</div>
+          </div>
+          <div class="mb-3">
+            <label for="patientEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="patientEmail" />
+          </div>
+          <div class="mb-3">
+            <label for="patientPhone" class="form-label">Điện thoại</label>
+            <input type="tel" class="form-control" id="patientPhone" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Lưu</button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Hủy
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Chatbot selftesting popup -->
+  <div id="chat-button" title="Mở chat">💬</div>
+
+  <div id="chat-popup" style="display: none">
+    <div id="chat-header">Trợ lý sức khỏe ảo</div>
+    <div id="chat-messages"></div>
+    <div id="chat-input-area">
+      <select id="mode-select" title="Chọn chế độ chatbot"></select>
+      <input
+        id="chat-input"
+        placeholder="Nhập câu hỏi hoặc triệu chứng..."
+        autocomplete="off"
+      />
+      <button id="chat-send-btn">Gửi</button>
+    </div>
+    <div id="tts-control">
+      <label
+        ><input type="checkbox" id="tts-toggle" checked /> Bật giọng đọc</label
+      >
+    </div>
+  </div>
+
+  <!-- JS thư viện -->
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+    crossorigin="anonymous"
+  ></script>
+  
+  <!-- JS xử lý bệnh nhân -->
+  <script src="{{ url_for('static', filename='js/patients.js') }}"></script>
+  <!-- JS xử lý chatbot -->
+  <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html>

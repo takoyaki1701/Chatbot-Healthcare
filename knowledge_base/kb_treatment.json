@@ -1,0 +1,71 @@
+[
+    {
+      "disease": "Cảm lạnh",
+      "treatment": "Nghỉ ngơi đầy đủ, uống nhiều nước, dùng thuốc giảm đau hạ sốt như paracetamol hoặc ibuprofen. Có thể dùng nước muối sinh lý để rửa mũi, tránh dùng thuốc xịt mũi quá 5 ngày.",
+      "recommended_medications": [
+        "Paracetamol",
+        "Ibuprofen",
+        "Nước muối sinh lý"
+      ]
+    },
+    {
+      "disease": "Cúm",
+      "treatment": "Nghỉ ngơi, uống nhiều nước, dùng thuốc giảm sốt và giảm đau. Thuốc kháng virus như oseltamivir có thể được dùng theo chỉ định bác sĩ.",
+      "recommended_medications": [
+        "Paracetamol",
+        "Ibuprofen",
+        "Oseltamivir (Tamiflu)"
+      ]
+    },
+    {
+      "disease": "COVID-19",
+      "treatment": "Điều trị chủ yếu là hỗ trợ, nghỉ ngơi, uống đủ nước, dùng thuốc giảm triệu chứng như paracetamol hoặc ibuprofen. Trường hợp nặng cần nhập viện để theo dõi và điều trị chuyên sâu.",
+      "recommended_medications": [
+        "Paracetamol",
+        "Ibuprofen"
+      ]
+    },
+    {
+      "disease": "Hen suyễn",
+      "treatment": "Sử dụng thuốc kiểm soát dài hạn như corticosteroid hít, thuốc giãn phế quản tác dụng dài. Dùng thuốc cắt cơn như albuterol khi có dấu hiệu hen suyễn cấp.",
+      "recommended_medications": [
+        "Corticosteroid hít",
+        "Albuterol (thuốc giãn phế quản cắt cơn)"
+      ]
+    },
+    {
+      "disease": "Dị ứng",
+      "treatment": "Tránh tiếp xúc với tác nhân dị ứng, sử dụng thuốc kháng histamine, corticosteroid dạng kem hoặc thuốc uống theo chỉ định bác sĩ.",
+      "recommended_medications": [
+        "Loratadine",
+        "Cetirizine",
+        "Thuốc corticosteroid dạng kem"
+      ]
+    },
+    {
+      "disease": "Mụn nước lạnh (Cold urticaria)",
+      "treatment": "Tránh tiếp xúc lạnh đột ngột, dùng thuốc kháng histamine để kiểm soát triệu chứng. Trong trường hợp nặng có thể cần thuốc corticosteroid hoặc thuốc khác theo bác sĩ chỉ định.",
+      "recommended_medications": [
+        "Loratadine",
+        "Cetirizine",
+        "Thuốc corticosteroid"
+      ]
+    },
+    {
+      "disease": "Viêm phế quản",
+      "treatment": "Nghỉ ngơi, uống đủ nước, dùng thuốc giảm ho, thuốc giãn phế quản nếu cần. Nếu ho kéo dài hoặc ho có máu nên đi khám bác sĩ.",
+      "recommended_medications": [
+        "Thuốc giảm ho",
+        "Thuốc giãn phế quản"
+      ]
+    },
+    {
+      "disease": "Viêm da tiếp xúc dị ứng",
+      "treatment": "Tránh tiếp xúc với chất gây dị ứng, sử dụng kem dưỡng ẩm, thuốc corticosteroid tại chỗ, và thuốc chống ngứa nếu cần.",
+      "recommended_medications": [
+        "Thuốc corticosteroid tại chỗ",
+        "Thuốc chống ngứa"
+      ]
+    }
+  ]
+  

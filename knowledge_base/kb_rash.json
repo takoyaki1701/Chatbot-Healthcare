@@ -1,0 +1,33 @@
+[
+    {
+      "question": "Viêm da tiếp xúc dị ứng là gì?",
+      "answer": "Viêm da tiếp xúc dị ứng là phản ứng dị ứng của da khi tiếp xúc trực tiếp với một chất gây dị ứng, như mỹ phẩm, xà phòng, kim loại hoặc thực vật như cây thường xuân độc.",
+      "tags": ["viêm da tiếp xúc dị ứng", "contact dermatitis", "da liễu"]
+    },
+    {
+      "question": "Triệu chứng của viêm da tiếp xúc dị ứng là gì?",
+      "answer": "Triệu chứng bao gồm: phát ban đỏ, ngứa, sưng, mụn nước hoặc vết loét tại vùng da tiếp xúc với chất gây dị ứng.",
+      "tags": ["viêm da tiếp xúc dị ứng", "triệu chứng", "da liễu"]
+    },
+    {
+      "question": "Cách điều trị viêm da tiếp xúc dị ứng như thế nào?",
+      "answer": "Điều trị bao gồm: tránh xa chất gây dị ứng, sử dụng kem dưỡng ẩm, thuốc chống ngứa, và trong một số trường hợp, thuốc corticosteroid theo chỉ định của bác sĩ.",
+      "tags": ["viêm da tiếp xúc dị ứng", "điều trị", "da liễu"]
+    },
+    {
+      "question": "Viêm da tiếp xúc kích ứng là gì?",
+      "answer": "Viêm da tiếp xúc kích ứng là phản ứng của da khi tiếp xúc với các chất gây kích ứng như xà phòng, nước rửa chén, hoặc chất tẩy rửa, dẫn đến da khô, đỏ và nứt nẻ.",
+      "tags": ["viêm da tiếp xúc kích ứng", "irritant contact dermatitis", "da liễu"]
+    },
+    {
+      "question": "Triệu chứng của viêm da tiếp xúc kích ứng là gì?",
+      "answer": "Triệu chứng bao gồm: da khô, đỏ, nứt nẻ, bong tróc, và cảm giác rát hoặc ngứa tại vùng da tiếp xúc với chất kích ứng.",
+      "tags": ["viêm da tiếp xúc kích ứng", "triệu chứng", "da liễu"]
+    },
+    {
+      "question": "Cách điều trị viêm da tiếp xúc kích ứng như thế nào?",
+      "answer": "Điều trị bao gồm: tránh tiếp xúc với chất kích ứng, sử dụng kem dưỡng ẩm, và trong một số trường hợp, thuốc corticosteroid theo chỉ định của bác sĩ.",
+      "tags": ["viêm da tiếp xúc kích ứng", "điều trị", "da liễu"]
+    }
+  ]
+  

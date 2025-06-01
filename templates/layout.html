@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}Healthcare System{% endblock %}</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- FontAwesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pbZCOvHHOMd1GLcMYQHzNDSuU5DkVtql4P+c3LJh7f8Vb8IU6Dj6wZwP2rXpYd1jpZK+0B6CW4OJZhv0iJ15xg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="{{ url_for('dashboard') }}">
+        <i class="fas fa-heartbeat me-2"></i>
+        Healthcare System
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        {% if session.get('user') %}
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link {% if request.endpoint == 'dashboard' %}active fw-bold{% endif %}" href="{{ url_for('dashboard') }}">
+              <i class="fas fa-home me-1"></i> Trang chủ
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if request.endpoint == 'patients' %}active fw-bold{% endif %}" href="{{ url_for('patients') }}">
+              <i class="fas fa-user-injured me-1"></i> Bệnh nhân
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if request.endpoint == 'doctors' %}active fw-bold{% endif %}" href="{{ url_for('doctors') }}">
+              <i class="fas fa-user-md me-1"></i> Bác sĩ
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if request.endpoint == 'appointments' %}active fw-bold{% endif %}" href="{{ url_for('appointments') }}">
+              <i class="fas fa-calendar-check me-1"></i> Lịch hẹn
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item me-3">
+            <span class="navbar-text text-white">
+              <i class="fas fa-user-circle me-1"></i> Xin chào, <strong>{{ session.get('user') }}</strong>
+            </span>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-light d-flex align-items-center" href="{{ url_for('logout') }}">
+              <i class="fas fa-sign-out-alt me-1"></i> Đăng xuất
+            </a>
+          </li>
+        </ul>
+        {% else %}
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('login') }}">Đăng nhập</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('register') }}">Đăng ký</a>
+          </li>
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, msg in messages %}
+          <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+            {{ msg }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="bg-primary text-white text-center py-3 fixed-bottom shadow-sm">
+    © 2025 Healthcare System
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
